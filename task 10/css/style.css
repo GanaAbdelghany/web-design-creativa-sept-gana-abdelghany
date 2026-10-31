@@ -1,0 +1,134 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+  
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.card {
+    width: 360px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-image: linear-gradient(to bottom, transparent 50%, black 100%), url(../images/bulilding.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 30px;
+}
+
+.card-front h2 {
+    color: white;
+    font-size: 26px;
+    line-height: 1.2;
+    width: 70%;
+}
+
+.circle {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #2b7de9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2b7de9;
+    font-size: 24px;
+}
+
+.front-circle {
+    color: #1e90ff;
+    border-color: #1e90ff;
+}
+
+.card-back {
+    background-color: #f2f3f5;
+    transform: rotateY(180deg);
+    padding: 70px 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back img {
+    width: 75px;
+    margin-bottom: 15px;
+}
+
+.card-back h2 {
+    color: #2d3a4f;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-back p {
+    color: #4a5568;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.read-more {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+.read-more a {
+    color: #2b7de9;
+    font-size: 17px;
+    text-decoration: none;
+}

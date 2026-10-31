@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+     font-family: "Open Sans", sans-serif;
+  
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+/* .padding-top-bottom {
+  padding: 4% 5%;
+ 
+} */
+.animation-card {
+  width:100%;
+  height: 200px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #3e3838;
+  margin-top: 300px;
+   /* animation-name: changeBgColor;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out; */
+  /* animation: translate 2s infinite alternate; */
+}
+.animation-car{
+  width: 100px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: translate 2s infinite linear; 
+}
+
+
+
+
+@keyframes translate {
+
+   0% {
+    transform: translateX(0px);
+  }
+100% {
+     transform: translatex(700px);
+
+  }  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .animation-card:hover {
+  animation-timing-function: linear;
+  animation-play-state: paused;
+  
+} */
+
+
+
+
+
+
+/* @keyframes changeBgColor { */
+  /* From {
+    background-color: #fff;
+  }
+  To {
+    /* background-color: #604f4f;
+    border-radius: 50%; */
+    /* transform: translateY(200px); */
+  /* } */
+
